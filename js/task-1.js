@@ -143,3 +143,30 @@ for (let i = string.length - 1; i >= 0; i -= 1) {
 } 
 console.log(reverse.toLocaleLowerCase());
 */
+/*
+const subscribers = [
+{name:  'user1', age: 20, profession: 'student'},
+{name:  'user12', age: 25, profession: 'programmer'}
+];
+const haveYouJustGotNewSubscribers = true;
+if (haveYouJustGotNewSubscribers) {
+    subscribers.unshift ({name: 'users3' , age: 18, profession: 'teacher'})
+}
+console.log(subscribers);
+*/
+
+/*
+Функція calculateTotal(number) приймає ціле число (параметр number). Доповни код функції так,
+ щоб вона повертала суму всіх цілих чисел від одиниці до цього числа включно. 
+Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
+
+function calculateTotal(number) {
+    let total = 0;
+    for (let i = 1; i <= number; i++) {
+        total += i;
+    } 
+    return total;
+}
+console.log(calculateTotal(2));
+*/
+
