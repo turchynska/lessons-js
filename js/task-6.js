@@ -1,54 +1,31 @@
-const makePromise = ({ value, delay, shouldResolve = true }) => {
-    return new Promise((resolve, reject) => {
-         setTimeout(() => {
-                  if(shouldResolve) {
-                      resolve(value)
-                  } else {
-                      reject(value)
-                  }
-              }, delay);
-    });
-  };
-  
-  makePromise({ value: "A", delay: 1000 })
-      .then(value => console.log(value)) // "A"
-      .catch(error => console.log(error));
-  
-  makePromise({ value: "B", delay: 3000 })
-      .then(value => console.log(value)) // "B"
-      .catch(error => console.log(error));
-  
-  makePromise({ value: "C", delay: 2000, shouldResolve: false })
-      .then(value => console.log(value)) 
-      .catch(error => console.log(error)); // "C"
+// початок js , перший модуль/ перша домашня
+/*
+function makeTransaction(quantity, pricePerDroid) {
+  const totalPrice = quantity * pricePerDroid;
+  return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+}
 
-      
+console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
+console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
+console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
+*/
+/*
+function getShippingMessage (country, price, deliveryFee){
+	const totalPrice = price + deliveryFee;
+	return `Shipping to ${country} will cost ${totalPrice} credits`;
+}
 
+console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
+console.log(getShippingMessage("Germany", 80, 20)); // "Shipping to Germany will cost 100 credits"
+console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will cost 120 credits"
+*/
+/*
+function getElementWidth (content, padding, border){
+const result = Number.parseFloat(content) + Number.parseFloat(padding) * 2 + Number.parseFloat(border) * 2;
+return result;
+}
 
-
-
-
-
-      new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve('Fulfilled A');
-        }, 1000);
-      })
-        .then(value => console.log(value))
-        .catch(error => console.log(error));
-      
-      new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve('Fulfilled B');
-        }, 3000);
-      })
-        .then(value => console.log(value))
-        .catch(error => console.log(error));
-      
-      new Promise((resolve, reject) => {
-        setTimeout(() => {
-          reject('Rejected C');
-        }, 2000);
-      })
-        .then(value => console.log(value))
-        .catch(error => console.log(error)); // "Rejected C"
+console.log(getElementWidth("50px", "8px", "4px")); // 74
+console.log(getElementWidth("60px", "12px", "8.5px")); // 101
+console.log(getElementWidth("200px", "0px", "0px")); // 200
+*/
