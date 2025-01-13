@@ -1,50 +1,210 @@
 
 
 ///////////////-----go-it----hm1//////
-/*
-function makeTransaction(quantity, pricePerDroid) {
-    const totalPrice = quantity * pricePerDroid;
-    return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
-  }
-  
-  console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
-  console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
-  console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
-  */
-  /*
-  function getShippingMessage (country, price, deliveryFee){
-      const totalPrice = price + deliveryFee;
-      return `Shipping to ${country} will cost ${totalPrice} credits`;
-  }
-  
-  console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
-  console.log(getShippingMessage("Germany", 80, 20)); // "Shipping to Germany will cost 100 credits"
-  console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will cost 120 credits"
-  */
-  /*
-  function getElementWidth (content, padding, border){
-  const result = Number.parseFloat(content) + Number.parseFloat(padding) * 2 + Number.parseFloat(border) * 2;
-  return result;
-  }
-  
-  console.log(getElementWidth("50px", "8px", "4px")); // 74
-  console.log(getElementWidth("60px", "12px", "8.5px")); // 101
-  console.log(getElementWidth("200px", "0px", "0px")); // 200
-  
-   function calcBMI(weight, height){
-    weight = weight.replace(",", ".");
-    height = height.replace(",", ".");
-  
-    weight = Number(weight);
-    height = Number(height);
-  
-    const result = weight / ( height * height);
-  
-  
-  return Number(result.toFixed(1))
-   }
+///////////////////////////////////////////PRACTIC
+// const quantity = 17;
+// console.log(typeof quantity);
+
+// const message = "java Script is awesome!"
+// console.log(typeof message);
+
+// const isSideBarOpen = false;
+// console.log(typeof isSideBarOpen);
+
+// let username;
+// console.log(username);
+
+// let status = null;
+// console.log(typeof status);
+
+// const x = 5;
+// const y = 20;
+// console.log(x + y);
+
+// const q = 4;
+// const w = 40;
+// console.log(w - q);
+
+// const age = 43;
+// const message = "Polly is " + age + "years old";
+// console.log(message)
+
+
+// const product = "Repair droid";
+// const lastElementIndex = product.length - 1;
+// console.log(lastElementIndex)
+
+// const courseTopic = "JavaScript essentials";
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic.length - 1;
+// console.log([lastElement])
+
+// function add(a, b, c) {
+//   const result = a + b + c
+//   console.log(`Addition result equals  ${result}`);
+// }
+// add(15, 20, 45)
+
+// function multiply(x, y, z) {
+//   const product = x * y * z;
+//   return product;
+// }
+
+// const result = multiply(2, 3, 4);
+// console.log(result);
+
+// function multiply(x, y, z) {
+//   console.log('The code before return is executed as usual!');
+//   return x * y * z;
+//   console.log('This code is never executed because is after return')
+// };
+// console.log(multiply(2, 3, 5))
+
+// function multiply(x, y, z) {
+//   console.log(`Result: ${x * y * z}`)
+// }
+// console.log('Log before multiply execution')
+// multiply(3, 5, 7);
+// console.log("Log after multiply execution")
+
+// console.log("A");
+// function logStuff() {
+//    console.log("B")
+// }
+// console.log("C");
+// logStuff();
+// console.log("D")
+
+
+// function foo() {
+//   const value = "I`m a global variable";
+//   console.log(value);
+// }
+// foo();
+// console.log(value)
+
+
+// function calculateTotalPrice(orderQuantity, pricePerItem) {
+//   const totalPrice = orderQuantity * pricePerItem;
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice(5, 100))
+
+///////////////////HOME WORK 1
+// function makeTransaction(quantity, pricePerDroid) {
+//   const totalPrice = quantity * pricePerDroid;
+//   return ` You ordered ${quantity} droids worth ${totalPrice} credits!`
+// }
+// console.log(makeTransaction(5, 3000));
+
+
+// function getShippingMessage(country, price, deliveryFee) {
+//   const totalPrice = price * deliveryFee;
+//   return `Shipping to ${country} will cost ${totalPrice} credits`;
+// }
+
+// console.log(getShippingMessage("Ukraine", 130, 60))
+
+
+// function getElementWidth(content, padding, border) {
+//   const result = Number.parseFloat(content) + Number.parseFloat(padding) * 2 + Number.parseFloat(border) * 2;
+//   return result
+// }
+// console.log(getElementWidth("50px", "8px", "4px"))
+
+
+
 
 /////////////-----go-it---- hm2///////
+////////////////////////////////////////Practic
+
+//GLOBAL
+//const value = "I`m a global variable";
+// function foo() {
+//   const value = "I`m a global variable";
+//   console.log(value);
+// }
+// foo();
+// console.log(value)
+
+//LOCAL
+// function foo() {
+// const value = "I`m a local variable";
+// console.log(value);
+// }
+// console.log(value)
+
+
+// const globalVar = "global";
+// console.log(globalVar)
+
+// if (true) {
+//   const aVar = "A";
+//   console.log(globalVar);
+//   console.log(aVar)
+
+//   if (true) {
+//     const bVar = "B";
+//     console.log(globalVar)
+//     console.log(aVar)
+//     console.log(bVar)
+//   }
+// }
+// console.log(globalVar);
+// if (true) {
+//   const cVar = "C";
+//   console.log(globalVar);
+//   console.log(aVar);
+//   console.log(bVar);
+//   console.log(cVar)
+// }
+/////Logic operotors
+// if (null) {
+//   console.log("Block If")
+// } else {
+//   console.log("Block else")
+// }//else
+
+// if (0) {
+//   console.log("Block if")
+// } else {
+//   console.log("block else")
+// }//else
+
+// if (5) {
+//   console.log("block If")
+// } else {
+//   console.log("block else")
+// }//if
+
+
+///LOGIC &&
+// console.log("hello" && 5);
+// console.log( 5 && "hello")
+
+// const a = 20;
+// console.log(a > 10 && a < 30)
+
+// const screenWidth = 700;
+// const sm = 320;
+// const md = 768;
+// const lg = 1200;
+
+// if (screenWidth <= sm) {
+//   console.log("<mobile screen")
+// } else if (screenWidth > sm && screenWidth <= md) {
+//   console.log("tablet screen")
+// } else if (screenWidth > md && screenWidth <= lg) {
+//   console.log("Desktop screen")
+// } else {
+//   console.log("Godzilla")
+// }
+
+
+
+
 /*
 function makeTransaction(quantity, pricePerDroid, customerCredits){
     let total = quantity * pricePerDroid;
